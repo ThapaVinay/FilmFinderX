@@ -2,7 +2,7 @@ import { View, Text, ScrollView, TouchableWithoutFeedback, Image, Dimensions, To
 import React from 'react'
 import { moviesData } from '../constants'
 import { useNavigation } from '@react-navigation/native';
-import { fallbackMoviePoster, image185, image342, poster342 } from '../api/moviedb';
+import { fallbackMoviePoster, image185, image342, poster342 } from '../api/Moviedb';
 import { styles } from '../theme';
 const {width, height} =  Dimensions.get('window');
 

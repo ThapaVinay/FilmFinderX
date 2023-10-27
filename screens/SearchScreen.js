@@ -3,7 +3,7 @@ import React, { useCallback, useState } from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { XMarkIcon } from 'react-native-heroicons/outline'
 import { useNavigation } from '@react-navigation/native'
-import { fallbackMoviePoster, image185, searchMovies } from '../api/moviedb'
+import { fallbackMoviePoster, image185, searchMovies } from '../api/Moviedb'
 import { debounce } from 'lodash'
 import Loading from '../components/loading'
 

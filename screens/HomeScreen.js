@@ -2,10 +2,10 @@ import { View, Text, TouchableOpacity, ScrollView, Platform } from 'react-native
 import React, { useEffect, useState } from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context';
 import {Bars3CenterLeftIcon, MagnifyingGlassIcon} from 'react-native-heroicons/outline'
-import TrendingMovies from '../components/trendingMovies';
-import MovieList from '../components/movieList';
+import TrendingMovies from '../components/TrendingMovies';
+import MovieList from '../components/MovieList';
 import { StatusBar } from 'expo-status-bar';
-import { fetchTopRatedMovies, fetchTrendingMovies, fetchUpcomingMovies } from '../api/moviedb';
+import { fetchTopRatedMovies, fetchTrendingMovies, fetchUpcomingMovies } from '../api/Moviedb';
 import { useNavigation } from '@react-navigation/native';
 import Loading from '../components/loading';
 import { styles } from '../theme';
@@ -28,6 +28,7 @@ export default function HomeScreen() {
   },[]);
 
   const getTrendingMovies = async ()=>{
+    console.log("hello");
     const data = await fetchTrendingMovies();
     console.log('got trending', data.results.length)
     if(data && data.results) setTrending(data.results);

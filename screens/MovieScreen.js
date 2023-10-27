@@ -5,9 +5,9 @@ import { LinearGradient } from 'expo-linear-gradient'
 import { ArrowLeftIcon, ChevronLeftIcon } from 'react-native-heroicons/outline';
 import { HeartIcon } from 'react-native-heroicons/solid';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import Cast from '../components/cast';
-import MovieList from '../components/movieList';
-import { fallbackMoviePoster, fetchMovieCredits, fetchMovieDetails, fetchSimilarMovies, image500 } from '../api/moviedb';
+import Cast from '../components/Cast';
+import MovieList from '../components/MovieList';
+import { fallbackMoviePoster, fetchMovieCredits, fetchMovieDetails, fetchSimilarMovies, image500 } from '../api/Moviedb';
 import { styles, theme } from '../theme';
 import Loading from '../components/loading';
 

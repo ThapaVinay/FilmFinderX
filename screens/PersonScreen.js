@@ -4,8 +4,8 @@ import { ChevronLeftIcon } from 'react-native-heroicons/outline'
 import { HeartIcon } from 'react-native-heroicons/solid'
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useNavigation, useRoute } from '@react-navigation/native';
-import MovieList from '../components/movieList';
-import { fallbackPersonImage, fetchPersonDetails, fetchPersonMovies, image185, image342, image500 } from '../api/moviedb';
+import MovieList from '../components/MovieList';
+import { fallbackPersonImage, fetchPersonDetails, fetchPersonMovies, image185, image342, image500 } from '../api/Moviedb';
 import Loading from '../components/loading';
 import { styles } from '../theme';
 

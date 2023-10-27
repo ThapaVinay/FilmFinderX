@@ -2,7 +2,7 @@ import { View, Text, Image, TouchableWithoutFeedback, Dimensions } from 'react-n
 import React from 'react'
 import Carousel from 'react-native-snap-carousel';
 import { useNavigation } from '@react-navigation/native';
-import { image500 } from '../api/moviedb';
+import { image500 } from '../api/Moviedb';
 
 var {width, height} = Dimensions.get('window');
 
