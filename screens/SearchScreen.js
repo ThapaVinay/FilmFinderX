@@ -39,7 +39,6 @@ export default function SearchScreen() {
     return (
         <SafeAreaView className="bg-neutral-800 flex-1">
 
-            {/* search input */}
             <View
                 className="mx-4 mb-3 flex-row justify-between items-center border border-neutral-500 rounded-full" >
                 <TextInput
@@ -57,7 +56,6 @@ export default function SearchScreen() {
                 </TouchableOpacity>
             </View>
 
-            {/* search results */}
             {
                 loading ? (
                     <Loading />
@@ -79,7 +77,6 @@ export default function SearchScreen() {
                                                 <View className="space-y-2 mb-4">
                                                     <Image
                                                         source={{ uri: image185(item.poster_path) || fallbackMoviePoster }}
-                                                        // source={require('../assets/images/moviePoster2.png')}
                                                         className="rounded-3xl"
                                                         style={{ width: width * 0.44, height: height * 0.3 }}
                                                     />
